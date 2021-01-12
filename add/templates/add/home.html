@@ -1,0 +1,34 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<header>
+	<nav class="navbar navbar-default" id="title">
+		<h1 style="text-align:center;"><a href="{% url 'home' %}" style="text-decoration:none;">Addition of 2 numbers </a></h1>
+	</nav>
+</header>
+<body>
+<div class="container" id="addform" style="text-align:center;margin-top:150px;">
+    <form method="post" action="{% url 'result' %}">
+        {% csrf_token %}
+        <div id="in" style="padding:3px;"><input type="text" name="num1" id="n1" size="70" required><br></div>
+
+        <div id="in"><input type="text" name="num2" id="n2" size="70" required><br></div>
+
+        <div id="in"><button href="#" class="btn btn-primary">Submit</button></div>
+
+    </form>
+</div>
+
+<footer style="bottom: 0;width:100%;position: fixed;color:blue;background-color:black;text-align:center;" id="foot">
+	<h4>Made by</h4>
+    <h5>Shubham Pawar</h5>
+</footer>
+</body>
+</html>
