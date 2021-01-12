@@ -83,11 +83,8 @@ pandocfilters==1.4.3
 parso==0.8.1
 pickleshare==0.7.5
 Pillow==8.0.1
-pipenv==2020.8.13
-post==2019.4.13
 prometheus-client==0.9.0
 prompt-toolkit==3.0.8
-public==2019.4.13
 pycodestyle==2.6.0
 pycparser==2.20
 pyflakes==2.2.0
@@ -100,8 +97,6 @@ pyshorteners==1.0.1
 PySocks==1.7.1
 pystache==0.5.4
 python-dateutil==2.8.1
-pytz==2020.1
-pywin32==300
 pywinpty==0.5.7
 PyYAML==5.3.1
 pyzmq==18.1.1
